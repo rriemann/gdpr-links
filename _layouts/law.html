@@ -3,4 +3,10 @@ layout: doc
 ---
 
 Title: {{ page.title }}
-<pre>{{ page.contents | jsonify }}</pre>
+
+{% comment %}
+{{ page | render_article }}
+{% endcomment %}
+
+
+<pre>{{ page.contents | yaml }}</pre>
